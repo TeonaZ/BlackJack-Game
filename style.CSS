@@ -26,6 +26,7 @@ input{
 
 .logo img{
     margin-left: -80px;
+    width: 100px;
 }
 
 /* navigation*/
@@ -78,10 +79,10 @@ nav ul li a:hover{
 
 #header{
     width: 100%;
-    height: 768px;
+    height: 940px;
     background-repeat: no-repeat;
     background-size: cover;
-    background-image: url(https://www.shutterstock.com/image-vector/blackjack-logo-green-ribbon-on-260nw-1639300576.jpg);
+    background-image: url(https://th.bing.com/th/id/R.f9299eaaebfa38d6242168a240f15b8a?rik=vl23wA1YofXkyQ&pid=ImgRaw&r=0);
     position: relative;
 }
 
@@ -103,13 +104,10 @@ nav ul li a:hover{
     font-size: Arial, Helvetica, sans-serif;
 }
 
-.header-heading h2{
-    color: #fff;
-    font-size: 40px;
-}
+
 
 /*blackjack*/
-
+ 
 body {
     font-family: Arial, Arial, Helvetica, sans-serif;
     text-align: center;
@@ -125,16 +123,57 @@ body {
     height: 175px;
     width: 125px;
     margin: 1px;
-    }
+}
 
-    #hit{
+#hit{
         width: 100px;
         height: 50px;
         font-size: 20px;
-    }
+        background-color: #e9c966;
+        
+}
 
-    #stay{
-        width: 100px;
-        height: 50px;
-        font-size: 20px;
-    }
+#stay{
+    width: 100px;
+    height: 50px;
+    font-size: 20px;
+    background-color: #e9c966;
+}
+
+button{
+    width: 100px;
+    height: 50px;
+    font-size: 20px;
+}
+
+button:hover {
+    cursor: pointer;
+    transform: translateY(-3px)
+}
+
+
+/*About*/
+
+
+h1{ 
+    margin-left: -5%;
+}
+
+p{
+    margin-right: 70%  
+}
+
+body{ 
+    background-color:rgba(0, 0, 0, 0.2)
+}
+
+/*Contact*/
+
+ .text h1{
+    font-size: 50px;
+    margin: 0px;
+    letter-spacing: 5px;
+    font-weight: 500;
+    color: #e9c966;
+    font-size: Arial, Helvetica, sans-serif;
+}
