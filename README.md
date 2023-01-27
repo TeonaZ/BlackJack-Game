@@ -6,4 +6,7 @@ created menu buttons which helps that to show  another pages which include: home
 //blackjack
 created blackjack HTML
 created blackjack JS
-created Functions in JS
+created Functions in JS:
+     buildDeck;
+     shuffleDeck;
+     startGame;
