@@ -99,23 +99,7 @@ function startGame() {
         canHit = false;
         document.getElementById("hidden").src = "/assets/cards/" + hidden + ".png";
 
-        let message = "";
-        if (userSum > 21) {
-            message = "User Lose!";
-        }
-        else if(dealerSum > 21) {
-            message = "User Win!";
-        }
-        //user and dealer <= 21
-        else if (userSum == dealerSum){  //same amount
-            message = "Tie!";
-        }
-        else if (userSum > dealerSum) {
-            message = "User Win!";
-        }
-        else if (userSum < dealerSum){
-            message = "User Lose!";
-        }
+       
 
         document.getElementById("dealer-sum").innerText = dealerSum;
         document.getElementById("user-sum").innerText = userSum;
