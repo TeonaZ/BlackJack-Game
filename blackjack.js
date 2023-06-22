@@ -1,3 +1,4 @@
+
 var dealerSum = 0;
 var userSum = 0;
 

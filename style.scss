@@ -1,0 +1,167 @@
+$primary-color: #e9c966;
+
+@mixin no-outline {
+  outline: none;
+  border: none;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+ul {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+button {
+  @include no-outline;
+}
+
+input {
+  @include no-outline;
+}
+
+.logo img {
+  margin-left: -80px;
+  width: 100px;
+}
+
+/* navigation */
+
+nav {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  box-shadow: 5px 10px 30px rgba(0, 0, 0, 0.2);
+  position: fixed;
+  left: 0;
+  top: 0;
+  width: 100%;
+  z-index: 1;
+  background-color: #000000;
+
+  ul {
+    display: flex;
+    margin-right: -80px;
+  }
+
+  ul li a {
+    height: 40px;
+    line-height: 43px;
+    margin: 3px;
+    padding: 0px 17px;
+    display: flex;
+    font-size: 0.7rem;
+    text-transform: uppercase;
+    font-weight: 500;
+    color: #fff;
+    letter-spacing: 1px;
+    transition: 0.6s ease-out;
+
+    &:hover {
+      border-left: 2px solid $primary-color;
+      border-bottom: 2px solid $primary-color;
+      box-shadow: 5px 10px 30px rgba(255, 217, 0, 0.4);
+    }
+  }
+
+  .active {
+    border-left: 2px solid $primary-color;
+    border-bottom: 2px solid $primary-color;
+    box-shadow: 5px 10px 30px rgba(255, 217, 0, 0.4);
+  }
+}
+
+/* Header */
+
+#header {
+  width: 100%;
+  height: 940px;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-image: url(https://th.bing.com/th/id/R.f9299eaaebfa38d6242168a240f15b8a?rik=vl23wA1YofXkyQ&pid=ImgRaw&r=0);
+  position: relative;
+
+  .header-heading {
+    width: 500px;
+    position: absolute;
+    left: 15%;
+    top: 50%;
+    transform: translate(-15,-50);
+    color: #fff;
+
+    h1 {
+      font-size: 70px;
+      margin: 0px;
+      letter-spacing: 5px;
+      font-weight: 500;
+      color: $primary-color;
+      font-size: Arial, Helvetica, sans-serif;
+    }
+  }
+}
+
+/* blackjack */
+
+body {
+  font-family: Arial, Arial, Helvetica, sans-serif;
+  text-align: center;
+}
+
+#dealer-cards img,
+#user-cards img {
+  height: 175px;
+  width: 125px;
+  margin: 1px;
+}
+
+#hit,
+#stay,
+button {
+  width: 100px;
+  height: 50px;
+  font-size: 20px;
+}
+
+#hit,
+#stay {
+  background-color: $primary-color;
+}
+
+button:hover {
+  cursor: pointer;
+  transform: translateY(-3px);
+}
+
+/* About */
+
+h1 {
+  margin-left: -5%;
+}
+
+p {
+  margin-right: 70%;
+}
+
+body {
+  background-color: rgba(0, 0, 0, 0.2);
+}
+
+/* Contact */
+
+.text h1 {
+  font-size: 50px;
+  margin: 0px;
+  letter-spacing: 5px;
+  font-weight: 500;
+  color: $primary-color;
+  font-size: Arial, Helvetica, sans-serif;
+}
+
+
