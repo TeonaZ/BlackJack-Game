@@ -15,4 +15,4 @@ created Functions in JS:
      restart;
      get value;
      chackAce;
-     reduceAce;
+     reduceAce;# BlackJack-Game-SCSS
